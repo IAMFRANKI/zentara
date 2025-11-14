@@ -1,0 +1,101 @@
+/* src/assets/styles/_base.css */
+/* Import variables first */
+@import './_variables.css';
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+  line-height: 1.6;
+  background-color: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary-dark);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary-medium);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  background-color: var(--color-primary-medium);
+  color: var(--color-white);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: var(--color-primary-light);
+}
+
+/* General Section Styles */
+.section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section.bg-light {
+  background-color: var(--color-light-gray);
+}
+
+.section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-primary-medium);
+  border-radius: 2px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: var(--color-text-dark);
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  line-height: 1.8;
+}

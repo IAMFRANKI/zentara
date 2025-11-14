@@ -1,0 +1,13 @@
+/* src/assets/styles/_variables.css */
+:root {
+    --color-primary-dark: #003366; /* Deep Navy Blue */
+    --color-primary-medium: #0056b3; /* Royal Blue */
+    --color-primary-light: #6699cc; /* Sky Blue */
+    --color-white: #ffffff;
+    --color-light-gray: #f8f8f8;
+    --color-text-dark: #333333;
+    --color-text-light: #666666;
+  
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+  }

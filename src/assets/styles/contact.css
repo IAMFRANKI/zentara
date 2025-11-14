@@ -1,0 +1,62 @@
+/* src/assets/styles/contact.css */
+@import './_variables.css';
+
+.contact-page .hero-banner {
+  background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 86, 179, 0.7)), var(--contact-hero-bg) center/cover no-repeat;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  text-align: center;
+  position: relative;
+}
+
+.contact-page .hero-banner h1 {
+  font-size: 4rem;
+  color: var(--color-white);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.contact-details-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-details-section .details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.contact-item {
+  background-color: var(--color-white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.contact-item .icon {
+  font-size: 2.5rem;
+  color: var(--color-primary-medium);
+  margin-bottom: 15px;
+}
+
+.contact-item h3 {
+  font-size: 1.5rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin: 0;
+}

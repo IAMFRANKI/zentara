@@ -1,0 +1,23 @@
+/* src/assets/styles/cta.css */
+@import './_variables.css';
+
+.cta-section {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  color: var(--color-white);
+}
+
+.cta-section p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 50px;
+  opacity: 0.9;
+  color: var(--color-light-gray);
+}
